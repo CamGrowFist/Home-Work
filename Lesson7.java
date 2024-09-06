@@ -25,7 +25,7 @@ public class Lesson7 {
         //задание 11
         System.out.println(Arrays.toString(arrArray()));
         //задание 12
-        System.out.println(Arrays.toString(devArray());
+        System.out.println(Arrays.toString(devArray()));
         //задание 13
         twoArray();
         //задание 14
@@ -130,8 +130,8 @@ public class Lesson7 {
         public static int[] devArray() {
         int[] arrDev = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         for (int i = 0; i < 12; i++) {
-            if (arr[i] < 6) {
-                arr[i] = arr[i] * 2;
+            if (arrDev[i] < 6) {
+                arrDev[i] = arrDev[i] * 2;
             }
         }
         return arrDev;
@@ -139,25 +139,25 @@ public class Lesson7 {
         
         //задание 13
        public static void twoArray() {
-       int[][] arr = new int[5][5];
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0, x = arr[i].length - 1; j < arr[i].length; j++, x--) {
+       int[][] arrTwo = new int[5][5];
+        for (int i = 0; i < arrTwo.length; i++) {
+            for (int j = 0, x = arrTwo[i].length - 1; j < arrTwo[i].length; j++, x--) {
                 if (i == j || i == x) {
-                    arr[i][j] = 1;
+                    arrTwo[i][j] = 1;
                 } else {
-                    arr[i][j] = 0;
+                    arrTwo[i][j] = 0;
                 }
-                System.out.print(arr[i][j] + " ");
+                System.out.print(arrTwo[i][j] + " ");
             }
             System.out.print("\n");
         }
     }
         //задание 14
         public static int[] met(int len, int initialValue) {
-        int[] arr = new int[len];
+        int[] arrMet = new int[len];
         for (int i = 0; i < len; i++) {
-            arr[i] = initialValue;
+            arrMet[i] = initialValue;
         }
-        return arr;
+        return arrMet;
     }
 }                
