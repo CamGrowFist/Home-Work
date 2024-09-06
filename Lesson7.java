@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 public class Lesson7 {
+        
         public static void main(String[] args) {
         //задание 1
         printThreeWords("Orange, Banana, Apple");
