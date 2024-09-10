@@ -25,14 +25,16 @@ public class Dog extends Animal {
             System.out.println("Вы указали верные данные?");
         }
     }
+    
+    void dogsActivity () {
+        runDog();
+        swimDog();
+    }
 
     static void dogInfo() {
-        Dog rafDog = new Dog("Раф", 150, 1);
-        Dog gafDog = new Dog("Гаф", 200, 0);
-        rafDog.runDog();
-        rafDog.swimDog();
-        gafDog.runDog();
-        gafDog.swimDog();
+        Dog[] dogs = new Dog[] {new Dog("Раф", 150, 1),new Dog("Гаф", 200, 0)};
+        dogs[0].dogsActivity();
+        dogs[1].dogsActivity();
         System.out.println("Собак: " + sumDog);
     }
 }
